@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="e73f38fb-450b-4c33-975f-353878b6525b" activeEnvironment="Default" name="Customer" resourceRoot="${projectDir}" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="b08649ca-f0dc-4691-99f3-54b382bc89c9" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dummy.restapiexample.com</con:endpoint></con:endpoints><con:resource name="Employee" path="/api/v1/employee/" id="c44285b5-b5a3-4d4f-bb6d-eda91e51f2fc"><con:settings/><con:parameters/><con:resource name="{id}" path="{id}" id="589f5f8c-9b7c-4417-a7e5-6ad0c6004fa4"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value>id</con:value><con:style>TEMPLATE</con:style><con:default>id</con:default></con:parameter></con:parameters><con:method name="GET" id="1f67e283-fb89-441c-8138-59ea500cf667" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="d6adec3e-9133-4b73-bd5d-e1ba5e132fd9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/employee/41930</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="42650" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:resource></con:interface><con:interface xsi:type="con:RestService" id="826d1f29-e12e-4e76-b190-6b73b52b8abc" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dummy.restapiexample.com</con:endpoint></con:endpoints><con:resource name="Create" path="/api/v1/create" id="b7f42210-84a7-4eb5-a930-e19fce491391"><con:settings/><con:parameters/><con:method name="Create 1" id="414c404e-bc6a-49a4-947a-b3cb194cb7aa" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="REQUEST"><con:mediaType>application/x-www-form-urlencoded</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html; charset=iso-8859-1</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="POST" id="d5295ce0-72e4-4c39-99e6-5b5bfcdfc2f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"vidhu",
+"age":"21",
+"salary":"90"
+}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Negative Test Case" id="d5295ce0-72e4-4c39-99e6-5b5bfcdfc2f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="6c00cecb-7fb5-4b72-a69e-d971c7f414c0" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dummy.restapiexample.com</con:endpoint></con:endpoints><con:resource name="PUT METHOD" path="/api/v1/update/{id}" id="01735bc9-a1b8-4831-bbb2-9290c77b149a"><con:settings/><con:parameters><con:parameter><con:name>id</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Update 1" id="f8215f0f-8bed-4360-bf06-040db34798f6" method="PUT"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="PUT" id="8dfd1963-1fe4-4aae-bdc5-cc6efdf16e64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"testiesn","salary":"123","age":"23"}
+</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="43302" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request><con:request name="NULL VALUES" id="8dfd1963-1fe4-4aae-bdc5-cc6efdf16e64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/update/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="51289" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" id="8c2e3573-8a1c-4a8c-b3c6-c5aa4d0bedcc" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dummy.restapiexample.com</con:endpoint></con:endpoints><con:resource name="Delete" path="/api/v1/delete/{id}" id="b28eb918-1b3a-4727-af23-c7f748445e06"><con:settings/><con:parameters><con:parameter required="true"><con:name>id</con:name><con:value>50468</con:value><con:style>TEMPLATE</con:style><con:default>50468</con:default><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Delete 1" id="07217a73-fa01-4fee-a933-d723300f78a2" method="DELETE"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="Request 1" id="10b98216-4738-4cc3-a568-577469dd3b1f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete50464</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="35790858-8022-4565-9dff-6d92ff043916" name="Customer Search"><con:description>TestSuite generated for REST Service [http://dummy.restapiexample.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="02e92edf-5df0-4bbd-ad0f-346d9222cf4f" failOnError="true" failTestCaseOnErrors="true" keepSession="true" maxResults="0" name="GET TESTCASE" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="restrequest" name="{id}" id="10514ac1-bf96-44d2-bd9e-1560a82342f2"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{id}" methodName="GET" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="{id}" id="d6adec3e-9133-4b73-bd5d-e1ba5e132fd9" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/employee/41930</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="cf2f1ca1-cfec-49e4-8a91-6b69b1d4d2bf" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="5167" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="Expect Not Found" id="4b93e978-0dca-4198-b4a9-9d42416d5884"><con:settings/><con:config service="http://dummy.restapiexample.com" methodName="GET" resourcePath="/api/v1/employee/{id}" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Expect Not Found" id="91c7c8ca-d974-4a44-8193-ded0c4a08092" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/employee/3</con:originalUri><con:assertion type="Simple Contains" id="4f91c204-f9ab-4a75-a960-b525c0bd8ae4" name="Contains"><con:configuration><token>false</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="GroovyScriptAssertion" id="1ca7b404-0310-4498-a500-42f9a2066604" name="Script Assertion"><con:configuration/></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="3" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Expect Not Found Groovy" id="faa58deb-9a03-4c7c-aea8-6069c9d77cfd"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def id=testRunner.runTestStepByName("Expect Not Found") //Getting Json response from POST Test Case
+def response=id.getResponse()
+def jsonstr=response.getContentAsString()
+JsonSlurper json=new JsonSlurper()
+def object=json.parseText(jsonstr)
+assert object==false
+</script></con:config></con:testStep><con:testStep type="groovy" name="ID Groovy Script" id="9355ea1a-b7af-4abd-ac2b-dc41f9fd6574"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def id=testRunner.runTestStepByName("{id}") //Getting Json response from POST Test Case
+def response=id.getResponse()
+def jsonstr=response.getContentAsString()
+log.info(jsonstr)
+JsonSlurper serializer=new JsonSlurper()
+def object=serializer.parseText(jsonstr)
+
+
+
+
+project = testRunner.testCase.testSuite.project ;
+tcase = project.testSuites["CommonUtils"].testCases["Utility"] ; 
+hello = tcase.getTestStepByName("Utils");
+
+hello.run(testRunner, context)
+
+
+
+def name=context.Utils.ExcelRead("Get")
+def age=context.Utils.ExcelRead("Get")
+def salary=context.Utils.ExcelRead("Get")
+
+log.info("Response from Excel")
+
+log.info(name[0])
+log.info(age[1])
+log.info(salary[2])
+
+log.info("------------------------------------")
+
+log.info("Response from Web Service")
+
+log.info(object.employee_name)
+log.info(object.employee_salary)
+log.info(object.employee_age)
+
+
+
+assert object.employee_name==name[0]:"employee_name is not correct" /// Assertion for Verfiying the Expected and Actual result
+assert object.employee_salary==salary[2]:"Salary is not correct"
+assert object.employee_age==age[1]:"Age is not correct"</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="9c61e507-775b-47f0-8ff9-2c66c49ed425" name="POST"><con:description>TestSuite generated for REST Service [http://dummy.restapiexample.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="3045f976-140a-4907-9eb3-393327890b72" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="POST TESTCASE" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="POST" id="5f3ba099-f6e0-4511-b5a3-2d65b9aa8c89"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="POST" id="d5295ce0-72e4-4c39-99e6-5b5bfcdfc2f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"ten1",
+"age":"45",
+"salary":"78"
+}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="90b6b0d2-a5fc-4679-afd8-990cba5a5a7e" name="Valid HTTP Status Codes"><con:configuration><codes>200 </codes></con:configuration></con:assertion><con:assertion type="Simple NotContains" id="5809dc3f-ed3c-400d-938f-3a9bea4a1403" name="Not Contains"><con:configuration><token>Duplicate entry</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="NEGATIVE TESTCASE" id="ee2fa4f7-0a3f-4abe-86da-9c9939622e35"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/create" methodName="Create 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="NEGATIVE TESTCASE" id="d5295ce0-72e4-4c39-99e6-5b5bfcdfc2f6" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:assertion type="Simple Contains" id="b6e19beb-80fa-492b-b073-451162a5c50e" name="Contains"><con:configuration><token>cannot be null</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Hello" id="e6bf994f-d449-4552-b89c-2c46ca20a7ee"><con:settings/><con:config><script>
+import jxl.*
+import jxl.write.*
+class Hello{
+
+ def log;
+ def context;
+ def testRunner;
+
+ def Hello(log, context, testRunner){
+  this.log = log
+  this.context = context
+  this.testRunner = testRunner
+ }
+
+ def sayHello(String name){
+  log.info ("   Hello "+name);
+ }
+
+ List ExcelRead(String sheet)
+ {
+	
+ 	def emptyList = []
+	Workbook workbook1 = Workbook.getWorkbook(new File("C:\\Users\\nitin.anand\\Desktop\\DATA.xls"))
+	Sheet sheet1 = workbook1.getSheet(sheet)
+	def row=sheet1.getRows()
+	log.info(row)
+	log.info("-----")
+	def column=sheet1.getColumns()
+	log.info(column)
+	for(int i=0;i&lt;column;i++)
+	{
+		if(i==column-1)
+		{
+			
+			for(int j=2;j&lt;row;j++)
+			{
+				
+				Cell a1=sheet1.getCell(i,j)
+				
+				//log.info(a1.getContents())
+				emptyList.add(a1.getContents())
+			}
+		}
+	}
+	
+	workbook1.close() 
+	return emptyList
+	 
+
+}
+ // getCell(row,column) -- place some values in myfile.xls
+ 
+}
+
+context.setProperty("Hello", new Hello(log,context,testRunner))
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Post Assertion Groovy" id="0c2be804-aca6-4861-a4bb-1ce2e46f5b1b"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def id=testRunner.runTestStepByName("POST") //Getting Json response from POST Test Case
+def response=id.getResponse()
+def jsonstr=response.getContentAsString()
+log.info(jsonstr)
+JsonSlurper serializer=new JsonSlurper()
+def object=serializer.parseText(jsonstr)
+
+
+def testStep = testRunner.testCase.getTestStepByName("Hello") // Calling CommonUtils Class Hello from Reading Data from Excel
+
+testStep.run(testRunner, context)
+
+context.Hello.sayHello("Raghav")
+def name=context.Hello.ExcelRead("Post")
+def age=context.Hello.ExcelRead("Post")
+def salary=context.Hello.ExcelRead("Post")
+//log.info(context.Hello.ExcelRead())
+//log.info(x)
+//log.info(name[0])
+assert object.name==name[0]:"employee_name is not correct" /// Assertion for Verfiying the Expected and Actual result
+assert object.age==age[1]:"Salary is not correct"
+assert object.salary==salary[2]:"Age is not correct"
+
+//log.info(x)</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="a1397150-dea8-4541-8e0b-dc3f905626f3" name="DELETE"><con:description>TestSuite generated for REST Service [http://dummy.restapiexample.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ee4b198d-3740-4abc-8f63-3d93412d7e96" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DELETE TESTCASE" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Delete" id="7844afaa-2b66-4696-8fd8-fa70a3a52bc3"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/delete/{id}" methodName="Delete 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Delete" id="10b98216-4738-4cc3-a568-577469dd3b1f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete50464</con:originalUri><con:assertion type="Simple Contains" id="b86344bf-beab-40c6-bcaf-a9c50c141180" name="Contains"><con:configuration><token>successfully</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="8ab5c7cf-568a-49d0-9e12-6e956c37603a" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="50469" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="fdfbdd02-a45d-47ba-90f1-43f143e9a9a8" name="Customer Update"><con:description>TestSuite generated for REST Service [http://dummy.restapiexample.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="ca0ecbd8-22b9-402a-b9b6-832838df7a16" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="PUT TESTCASE" searchProperties="true"><con:description>TestCase generated for REST Resource [PUT METHOD] located at [/api/v1/update/{id}]</con:description><con:settings/><con:testStep type="restrequest" name="PUT" id="0dfc39df-9fe3-4c61-aa41-0e4a9baa7159"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{id}" methodName="Update 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="PUT" id="8dfd1963-1fe4-4aae-bdc5-cc6efdf16e64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"testing","salary":"78","age":"45"}
+</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/</con:originalUri><con:assertion type="Valid HTTP Status Codes" id="469f5eba-a78b-4339-af87-87b3d2012a44" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="57602" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="NULL VALUES" id="a4b038f4-4709-4907-a155-ead49c555ff8"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{id}" methodName="Update 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="NULL VALUES" id="8dfd1963-1fe4-4aae-bdc5-cc6efdf16e64" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/update/</con:originalUri><con:assertion type="Simple Contains" id="03547a2c-3145-4d95-86e3-858404c873af" name="Contains"><con:configuration><token>null</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" id="2eecc6a6-9a5e-4534-8543-3fcd1ce1f836" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="id" value="51289" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>id</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="PUT  Assertion Methods" id="de7d242b-97ac-4b00-a728-49dd8814e8d1"><con:settings/><con:config><script>import groovy.json.JsonSlurper
+
+def id=testRunner.runTestStepByName("PUT") //Getting Json response from PUT Test Case
+def response=id.getResponse()
+def jsonstr=response.getContentAsString()
+log.info(jsonstr)
+JsonSlurper json=new JsonSlurper()
+def object=json.parseText(jsonstr)
+
+
+
+project = testRunner.testCase.testSuite.project ;
+tcase = project.testSuites["CommonUtils"].testCases["Utility"] ; 
+hello = tcase.getTestStepByName("Utils");
+
+hello.run(testRunner, context)
+
+
+context.Utils.sayHello("Raghav") // Calling Common Utils method from different POST Suite
+def name=context.Utils.ExcelRead("Put")
+def age=context.Utils.ExcelRead("Put")
+def salary=context.Utils.ExcelRead("Put")
+
+
+assert object.name==name[0]:"employee_name is not correct" /// Assertion for Verfiying the Expected and Actual result
+assert object.salary==salary[2]:"Salary is not correct"
+assert object.age==age[1]:"Age is not correct"
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:testSuite id="d11fd313-690c-405f-aac1-42164754fed5" name="CommonUtils"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="dcd1a217-6500-4f30-8dc5-51c129d67cfe" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Utility" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Utils" id="f9a3e4c0-5e83-4b93-9551-877324e1dab2"><con:settings/><con:config><script>
+import jxl.*
+import jxl.write.*
+class Utils{
+
+ def log;
+ def context;
+ def testRunner;
+
+ def Utils(log, context, testRunner){
+  this.log = log
+  this.context = context
+  this.testRunner = testRunner
+ }
+
+ def sayHello(String name){
+  log.info ("   Hello "+name);
+ }
+
+ List ExcelRead(String sheet)
+ {
+	
+ 	def emptyList = []
+ 	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+      def projectPath = groovyUtils.projectPath+"\\DATA.xls";
+	Workbook workbook1 = Workbook.getWorkbook(new File(projectPath))
+	Sheet sheet1 = workbook1.getSheet(sheet)
+	def row=sheet1.getRows()
+	log.info(row)
+	log.info("-----")
+	def column=sheet1.getColumns()
+	log.info(column)
+	for(int i=0;i&lt;column;i++)
+	{
+		if(i==column-1)
+		{
+			
+			for(int j=2;j&lt;row;j++)
+			{
+				
+				Cell a1=sheet1.getCell(i,j)
+				
+				//log.info(a1.getContents())
+				emptyList.add(a1.getContents())
+			}
+		}
+	}
+	
+	workbook1.close() 
+	return emptyList
+	 
+
+}
+ // getCell(row,column) -- place some values in myfile.xls
+ 
+}
+
+context.setProperty("Utils",new Utils(log,context,testRunner))
+
+
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
