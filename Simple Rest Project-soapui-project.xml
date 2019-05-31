@@ -79,7 +79,9 @@ class Hello{
  {
 	
  	def emptyList = []
-	Workbook workbook1 = Workbook.getWorkbook(new File("C:\\Users\\nitin.anand\\Desktop\\DATA.xls"))
+	def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+    def projectPath = groovyUtils.projectPath+"\\DATA.xls";
+	Workbook workbook1 = Workbook.getWorkbook(new File(projectPath))
 	Sheet sheet1 = workbook1.getSheet(sheet)
 	def row=sheet1.getRows()
 	log.info(row)
